@@ -1,4 +1,3 @@
-# ODUSA proprietary for Mega Donor Model
 # Requirements:
   # sklearn
   # numpy
@@ -52,9 +51,8 @@ TAG = "K-MEANS-CLUST/ "
 
 
 def get_initial_centroids(data, k, seed=None):
-    """We used our own major donor data
-       and benchmark org donor data to assign
-       k data points as initial centroids"""
+    """Assign k data points 
+       as initial centroids"""
     if seed is not None:  # useful for obtaining consistent results
         np.random.seed(seed)
     n = data.shape[0]  # number of data points
